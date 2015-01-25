@@ -8,7 +8,7 @@ task :flip do
   str.gsub!(/Fucking Go/, "Flipping Go")
   str.gsub!(/fuckingblock/, "goshdarnblock")
   str.gsub!(/Fucking Block/, "Gosh Darn Block")
-  str.gsub!(/Not a fan of profanity.*also works\./, "For the more NSFW site, <a href='http://fuckingblocksyntax.com/'>here</a>")
+  str.gsub!(/Not a fan of profanity.*also works\./, "For the more NSFW site, <a href='http://fuckinggodateformat.com/'>here</a>")
 
   File.write("index.html", str)
 
