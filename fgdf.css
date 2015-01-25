@@ -1,0 +1,169 @@
+body {
+  color: #777;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+#layout {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#layout {
+  position: relative;
+  padding-left: 0;
+}
+  #layout.active {
+    position: relative;
+  }
+
+.content {
+  margin: 0 auto;
+  padding: 0 2em;
+  max-width: 960px;
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+
+.header {
+   color: #333;
+   text-align: center;
+   padding: 2.5em 2em 0;
+ }
+  .header h1 {
+    margin: 0.2em 0;
+    font-size: 3em;
+    font-weight: 300;
+  }
+  .header h2 {
+    font-weight: 300;
+    color: #ccc;
+    padding: 0;
+    margin-top: 0;
+  }
+  .header h2 code {
+    color: #999;
+  }
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) {
+  #arrow {
+    transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+  }
+
+  .header,
+  .content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #layout {
+    left: 0;
+  }
+}
+
+#translator {
+  margin: 2em 0;
+  font-weight: 300;
+  color: #888;
+}
+
+#strftime, #output {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 28px;
+  font-family: "Inconsolata", "Courier New", monospace;
+  outline: none;
+  padding: 0.5em 0.6em;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+dt {
+  clear: both;
+  float: left;
+  font-family: "Inconsolata", "Courier New", monospace;
+}
+
+code {
+  font-family: "Courier New";
+}
+
+dd {
+  float: left;
+  font-size: 12px;
+}
+
+#arrow {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  line-height: 60px;
+  text-align: center;
+}
+
+#definitions, #unsupported, #footer {
+  max-width: 840px;
+  margin: auto;
+}
+
+#definitions dt {
+  background: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 3px 0;
+  padding: 3px 8px;
+}
+
+#unsupported {
+  border-bottom: 1px solid #eee;
+  color: #bbb;
+  margin-top: 1.5em;
+  margin-bottom: 1.75em;
+  padding-bottom: 1.75em;
+}
+
+#unsupported h4 {
+  margin: 0.66em 0;
+}
+
+#unsupported dt, #unsupported dd {
+  font-size: 11px;
+}
+
+a {
+  color: rgba(251, 207, 39, 1.0);
+}
+
+input[type="text"]:hover {
+  border-bottom: 1px solid #FBCF27 !important;
+}
+
+input[type="text"] {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#why {
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+
+#footer {
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  padding-top: 1.5em;
+}
+
+
