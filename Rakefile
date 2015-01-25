@@ -5,10 +5,10 @@ end
 task :flip do
   # BW: Hacky as well. YOLO amirite?
   str = File.read("index.html")
-  str.gsub(/Fucking Go/, "Flipping Go")
-  str.gsub(/fuckingblock/, "goshdarnblock")
-  str.gsub(/Fucking Block/, "Gosh Darn Block")
-  str.gsub(/Not a fan of profanity.*also works\./, "For the more NSFW site, <a href='http://fuckingblocksyntax.com/'>here</a>")
+  str.gsub!(/Fucking Go/, "Flipping Go")
+  str.gsub!(/fuckingblock/, "goshdarnblock")
+  str.gsub!(/Fucking Block/, "Gosh Darn Block")
+  str.gsub!(/Not a fan of profanity.*also works\./, "For the more NSFW site, <a href='http://fuckingblocksyntax.com/'>here</a>")
 
   File.write("index.html", str)
 
