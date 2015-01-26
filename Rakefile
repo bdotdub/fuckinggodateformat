@@ -1,3 +1,5 @@
+task :default => [ :fuck, :flip ]
+
 task :fuck do
   sh "aws --profile #{ENV["AWS_PROFILE"]} s3 sync --exclude README.md --exclude \".git/*\" --exclude Rakefile --acl public-read . s3://fuckinggodateformat.com/"
 end
