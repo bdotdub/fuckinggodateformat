@@ -17,6 +17,7 @@ $(function() {
     "%p": "PM",
     "%S": "05",
     "%Z": "MST",
+    "%z": "-0700",
     "%%": "%",
 
     // Codes that Go doesn't support
