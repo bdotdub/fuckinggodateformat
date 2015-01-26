@@ -42,11 +42,15 @@ $(function() {
     return str.replace(new RegExp(find, 'g'), replace);
   }
 
-  function update() {
+  function update(cb) {
     var input = $("#strftime").val();
     var output = strftime(input);
 
     $("#output").val(output);
+
+    if (cb) {
+      cb();
+    }
   }
 
   function appendCode() {
@@ -68,5 +72,12 @@ $(function() {
 
   $("#definitions dt").click(appendCode);
 
-  update()
+  update(function() {
+    var $el = $("#strftime"),
+      el = $el[0];
+
+    $el.focus();
+
+    el.selectionStart = el.selectionEnd = el.value.length;
+  });
 });
