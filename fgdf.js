@@ -5,7 +5,7 @@ $(function() {
     "%b": "Jan",
     "%B": "January",
     "%d": "02",
-    "%e": "2",
+    "%e": "_2",
     "%m": "01",
     "%y": "06",
     "%Y": "2006",
@@ -17,6 +17,7 @@ $(function() {
     "%p": "PM",
     "%S": "05",
     "%Z": "MST",
+    "%z": "-0700",
     "%%": "%",
 
     // Codes that Go doesn't support
