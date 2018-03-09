@@ -31,16 +31,18 @@ $(function() {
   }
 
   function strftime(str) {
-    for (var c in mapping) {
-      var f = mapping[c];
-      str = replaceAll(str, c, f);
+    var res = "";
+    for (var i = 0; i < str.length; i++) {
+      var f = mapping[str.substr(i, 2)];
+      if (f) {
+        res += f;
+        i++;
+      } else {
+        res += str[i];
+      }
     }
 
-    return str;
-  }
-
-  function replaceAll(str, find, replace) {
-    return str.replace(new RegExp(find, 'g'), replace);
+    return res;
   }
 
   function update(cb) {
